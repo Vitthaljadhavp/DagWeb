@@ -1,0 +1,62 @@
+/* Global font styles */
+* {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  /* outline: 1px solid red; Helps you see what's causing overflow */
+  box-sizing: border-box; /* Prevents overflow due to padding */
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header styles */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease-in-out;
+}
+
+header.scrolled {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styles */
+footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Transition helper class */
+.transition {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Body content to avoid overlapping with fixed header */
+.app {
+  padding-top: 60px; /* Adjust based on header height */
+}
+
+/* Image responsiveness */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Ensure containers don’t overflow */
+.container-fluid {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
