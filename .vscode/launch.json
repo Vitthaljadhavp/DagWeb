@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-GameApplication<Game>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.demo.GameApplication",
+            "projectName": "Game",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
